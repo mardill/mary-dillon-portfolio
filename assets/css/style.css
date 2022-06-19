@@ -1,0 +1,44 @@
+
+body{
+    background-color: #E4DAD7 ;
+}
+
+
+.about-me{
+    display:flex;
+    height: 500px;
+    border: 10px solid white;
+}
+
+@media only screen and (max-width:1024px){
+    .about-me{
+        display:block;
+    }
+}
+
+.about-me .bio-container{
+    display: flex;
+    position: relative;
+    background-color: #477B97;
+}
+
+.about-me h1, .about-me p{
+    color: white;
+    width:75%;
+    padding-left: 50px;
+    border: none;
+
+}
+
+.about-me h1{
+    padding-top: 50px;
+}
+
+.portrait{
+    background-color: white;
+    border: 10px solid white;
+}
+.portrait img{
+    height:100%;
+    /* padding-right:50px; */
+}
