@@ -1,44 +1,256 @@
 
+*{
+    box-sizing:border-box;
+}
+
+
 body{
-    background-color: #E4DAD7 ;
+    background-color: white ;
+}
+
+img {
+    filter: grayscale(100%);
+  }
+
+img:hover{
+    filter:none;
+}
+
+header{
+    background-color: white;
+    height: 150px;
+}
+
+/* main{
+    margin-left:20px;
+    margin-right:20px;
+} */
+
+header a{
+    text-decoration: none;
+    color:indigo;
+    padding:15px;
+}
+
+header h1{
+    color: indigo;
+    margin-left: 40px;
+    margin-top:40px;
+}
+
+header nav{
+    text-align: center;
+
 }
 
 
 .about-me{
     display:flex;
-    height: 500px;
-    border: 10px solid white;
+    flex-direction: row;
+    margin-left:20%;
+    margin-right:20%;
 }
 
-@media only screen and (max-width:1024px){
-    .about-me{
+@media only screen and (max-width:860px){
+    .about-me, .my-work .projects{
         display:block;
     }
 }
 
-.about-me .bio-container{
-    display: flex;
+/* child 1 of about-me div*/
+.about-me .bio{
+    flex: 1 0 0;
+    width:50%;
+    height:500px;
+    background-color: white;
     position: relative;
-    background-color: #477B97;
+    
 }
 
 .about-me h1, .about-me p{
-    color: white;
+    color: indigo;
     width:75%;
-    padding-left: 50px;
+    padding-left: 10px;
     border: none;
 
 }
 
 .about-me h1{
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
-.portrait{
+
+/* child 2 of about-me div*/
+.about-me .portrait{
+    flex: 1 0 0;
+    width:50%;
+    height:500px;
     background-color: white;
-    border: 10px solid white;
+    position: relative;
+    /* background-image:url(assets/images/marydillon.jpg) center;
+    background-size:cover; */
+
 }
-.portrait img{
-    height:100%;
-    /* padding-right:50px; */
+
+.about-me .portrait img{
+    max-height:100%;
+    max-width:auto;
+    object-fit: cover;
+    border:10px solid antiquewhite;
+    
 }
+
+
+.work-intro{
+    display:block;
+    height:200px;
+    text-align: center;
+    margin-top:5%;
+    background-color: antiquewhite;
+}
+
+.work-intro h1{
+    padding-top:75px;
+    margin-bottom:5px;
+}
+
+
+.my-work{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: antiquewhite;
+}
+
+
+
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+ul{
+    list-style: none;
+    flex: 1 0 0;
+}
+
+.projects .p2, .projects .p3,.projects .p4{
+    width:33%;
+    height: 340px;
+    padding:15px;
+    text-align: center;
+}
+
+
+.p2 img, .p3 img,.p4 img{
+    max-width:100%;
+    max-height:auto;
+    object-fit: cover;
+}
+
+.contact{
+    display:flex;
+    flex-direction: row;
+    margin-left:20%;
+    margin-right:20%;
+    height:400px;
+}
+
+.contact .left{
+    width:50%;
+    text-align: center;
+}
+
+.contact .right{
+    width:50%;
+    text-align: center;
+}
+
+.contact .left h1{
+    color: indigo;
+    padding-top: 150px;
+}
+
+.info{
+    padding-top:100px;
+}
+
+.contact .right h2{
+    color: indigo;
+}
+
+
+
+footer{
+    background-color: indigo;
+    height:200px;
+}
+
+footer h1,h2,p{
+    color:white;
+}
+
+
+/* .work-highlight{
+    display:flex;
+    width:50%;
+    height:600px;
+    padding-top:50px;
+    padding-left: 50px;
+}
+
+
+.work-highlight img{
+    width:600px;
+}
+
+.projects{
+    width:50%;
+    height:600px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects img{
+    width: 300px;
+    object-fit: cover;
+    margin: 15px;
+
+} */
+
+
+
+
+
+
+
+
+/* 
+.work-highlight img{
+    width:100%;
+}
+
+ul li{
+    display:inline;
+    list-style: none;
+}
+
+ul li img{
+    width:33%;
+} */
+
+
+
+/* .work-intro h1, .work-intro p{
+    text-align: center;
+}
+
+.work-intro h1{
+    padding-top:30px;
+} */
