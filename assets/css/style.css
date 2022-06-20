@@ -8,13 +8,7 @@ body{
     background-color: white ;
 }
 
-img {
-    filter: grayscale(100%);
-  }
 
-img:hover{
-    filter:none;
-}
 
 header{
     background-color: white;
@@ -44,7 +38,7 @@ header nav{
 }
 
 
-.about-me{
+#about-me{
     display:flex;
     flex-direction: row;
     margin-left:20%;
@@ -52,13 +46,13 @@ header nav{
 }
 
 @media only screen and (max-width:860px){
-    .about-me, .my-work .projects{
+    #about-me, .my-work .projects{
         display:block;
     }
 }
 
 /* child 1 of about-me div*/
-.about-me .bio{
+#about-me .bio{
     flex: 1 0 0;
     width:50%;
     height:500px;
@@ -67,7 +61,7 @@ header nav{
     
 }
 
-.about-me h1, .about-me p{
+#about-me h1, #about-me p{
     color: indigo;
     width:75%;
     padding-left: 10px;
@@ -75,14 +69,14 @@ header nav{
 
 }
 
-.about-me h1{
+#about-me h1{
     padding-top: 80px;
     padding-bottom: 20px;
 }
 
 
 /* child 2 of about-me div*/
-.about-me .portrait{
+#about-me .portrait{
     flex: 1 0 0;
     width:50%;
     height:500px;
@@ -93,7 +87,7 @@ header nav{
 
 }
 
-.about-me .portrait img{
+#about-me .portrait img{
     max-height:100%;
     max-width:auto;
     object-fit: cover;
@@ -113,14 +107,29 @@ header nav{
 .work-intro h1{
     padding-top:75px;
     margin-bottom:5px;
+    color: indigo;
 }
 
+.work-highlight{
+    text-align: center;
+    padding-bottom:30px;
+}
 
-.my-work{
+.work-highlight img {
+    width:700px;
+    border:5px solid indigo;
+}
+
+#my-work{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
     background-color: antiquewhite;
+    justify-content: center;
+}
+
+#my-work h2{
+    color:indigo
 }
 
 
@@ -142,7 +151,7 @@ ul{
 .projects .p2, .projects .p3,.projects .p4{
     width:33%;
     height: 340px;
-    padding:15px;
+    padding:10px;
     text-align: center;
 }
 
@@ -151,9 +160,15 @@ ul{
     max-width:100%;
     max-height:auto;
     object-fit: cover;
+    border:5px solid indigo;
+    filter: grayscale(100%);
 }
 
-.contact{
+ img:hover{
+    filter:none;
+}
+
+#contact{
     display:flex;
     flex-direction: row;
     margin-left:20%;
@@ -161,17 +176,17 @@ ul{
     height:400px;
 }
 
-.contact .left{
+#contact .left{
     width:50%;
     text-align: center;
 }
 
-.contact .right{
+#contact .right{
     width:50%;
     text-align: center;
 }
 
-.contact .left h1{
+#contact .left h1{
     color: indigo;
     padding-top: 150px;
 }
@@ -180,7 +195,7 @@ ul{
     padding-top:100px;
 }
 
-.contact .right h2{
+#contact .right h2{
     color: indigo;
 }
 
