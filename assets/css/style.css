@@ -1,11 +1,6 @@
 /* font-family: 'Khula', sans-serif;
 font-family: 'Urbanist', sans-serif; */
 
-@media only screen and (max-width:860px){
-    #about {
-        display:block;
-    }
-}
 
 *{
     box-sizing:border-box;
@@ -19,10 +14,17 @@ body{
     border:20px solid white;
 }
 
+a, a h3{
+    text-decoration: none;
+    color:#cb5f50;
+    text-transform: lowercase;
+}
+
 h1,h2,h3,h4{
     font-family: 'Khula', sans-serif;
     text-transform: uppercase;
     font-size:30px;
+    color:#006694
 }
 
 p{
@@ -58,6 +60,12 @@ header nav a{
     text-decoration: none;
     color:#006694;
     font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    padding:20px;
+}
+
+a:hover{
+    color:#f37160;
 }
 
 
@@ -150,13 +158,16 @@ header nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #d3e3d6;
     
 }
 
 #work .work-highlight img{
     max-width: 600px;
-    border: 20px solid #fdecdf;
     height:400px;
+    filter: grayscale(100%);
+    padding-top:20px;
+
 }
 
 #work .other {
@@ -175,7 +186,7 @@ header nav a{
     max-width: 30%;
     text-align: center;
     padding:20px;
-    background-color: #fdecdf;
+    background-color: #d3e3d6;
     color:#006694
 }
 
@@ -189,8 +200,6 @@ header nav a{
 
 #contact{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: stretch;
     height: 250px;
 }
@@ -198,18 +207,45 @@ header nav a{
 #contact .left-contact{
     width:50%;
     float:left;
-    background-color: #fdecdf;
+    background-color: #a8d9ec ;
 }
 
 #contact .right-contact{
     width:50%;
     float:right;
     background-color: #d3e3d6;
+    text-align: center;
+}
+
+#contact .left-contact h2, #contact .left-contact p{
+    width:80%;
+    padding-left:50px;
+}
+
+#contact .left-contact h2{
+    padding-top:20px;
+    
 }
 
 
 
+@media only screen and (max-width:860px){
+    #about {
+        display:block;
+    }
+}
 
+@media only screen and (max-width:860px){
+    #about {
+        display:block;
+    }
+}
+
+@media only screen and (max-width:860px){
+    #about .left, #about .right {
+        width:100%;
+    }
+}
 
 
 
